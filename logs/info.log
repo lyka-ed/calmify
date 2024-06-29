@@ -1,0 +1,22 @@
+2024-06-28 15:26:15 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:26:15 info: Blog created successfully
+2024-06-28 15:29:26 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:30:36 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:30:36 info: Blog created successfully
+2024-06-28 15:31:11 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:31:11 info: Blog created successfully
+2024-06-28 15:31:18 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:31:18 info: Blog created successfully
+2024-06-28 15:31:47 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:31:47 info: Blog created successfully
+2024-06-28 15:32:48 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:32:48 info: Blog created successfully
+2024-06-28 15:34:11 error: Cannot read properties of undefined (reading 'split')
+2024-06-28 15:34:11 info: Blog created successfully
+2024-06-28 15:43:49 info: Blog found
+2024-06-28 15:48:57 info: Blog updated successfully
+2024-06-28 15:49:16 info: Blog updated successfully
+2024-06-28 15:49:25 info: Blog updated successfully
+2024-06-28 15:51:01 info: Blog deleted successfully
+2024-06-28 17:21:14 error: Blog not found
+2024-06-28 17:25:51 info: Blog updated successfully
