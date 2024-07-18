@@ -16,8 +16,6 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-// app.use("/api/v1/user", import("./common/routes/userRoutes.js"));
-// app.use("/api/v1/blog", import("./common/routes/blogRoutes.js"));
 (async () => {
   try {
     const blogRoutes = await import("./common/routes/blogRoutes.js");
