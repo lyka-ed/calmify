@@ -20,3 +20,7 @@
 2024-06-28 15:51:01 info: Blog deleted successfully
 2024-06-28 17:21:14 error: Blog not found
 2024-06-28 17:25:51 info: Blog updated successfully
+2024-07-25 21:43:31 error: Cannot read properties of undefined (reading 'split')
+2024-07-25 21:45:54 error: Cannot read properties of undefined (reading 'split')
+2024-07-25 21:45:55 info: Blog created successfully
+2024-08-13 18:02:23 info: Welcome to CALMIFY where all your worries are addressed

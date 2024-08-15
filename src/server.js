@@ -5,11 +5,10 @@ import cors from "cors";
 import rateLimit from "express-rate-limit";
 import pkg from "express-openid-connect";
 import helmet from "helmet"; 
+import {logger} from "./common/utils/logger.js";
 import { ENVIRONMENT } from "./common/config/environment.js";
 import { connectDB } from "./common/config/database.js";
-
-
-import auth0Middleware from "../auth/auth0.js";
+import auth0Middleware from "./common/middlewares/auth0/auth0.js";
 
 
 // Default app configurations
@@ -59,13 +58,14 @@ app.use(helmet()); // Set security headers
 (async () => {
   try {
     const authRoutes = await import("./common/routes/authRoutes.js");
-    app.use("/api/v1/auth", requiresAuth(), authRoutes.default);
+    app.use("/api/v1/auth", authRoutes.default);
   } catch (error) {
     console.error("Failed to load user routes:", error);
   }
 })();
 
 app.get("/", (req, res) => {
+  logger.info("Welcome to CALMIFY where all your worries are addressed");
   return res
     .status(200)
     .send("<h1> Welcome to CALMIFY where all your worries are addressed </h1>");

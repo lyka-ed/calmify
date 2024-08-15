@@ -20,7 +20,7 @@ export async function getAll(req, res) {
     const blogs = await getAllBlogs(req.query);
     res.status(200).json({
       success: true,
-      message: "See Blog below!",
+      message: "See Blogs below!",
       totalBlogs: blogs.length,
       blogs,
     });

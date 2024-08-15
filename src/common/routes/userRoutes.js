@@ -7,12 +7,13 @@ import {
   deleteProfileController,
 } from "../controllers/userController.js";
 import { authMiddleware } from "../middlewares/authMiddleware.js";
+import { adminMiddleware } from "../middlewares/adminMiddleware.js";
 
 const router = express.Router();
 
 //routes
 //GET USER || GET
-router.get("/getUser", authMiddleware, getUserController);
+router.get("/getUser", authMiddleware, adminMiddleware, getUserController);
 
 // UPDATE USER PROFILE || PUT
 router.put("/updateUser", authMiddleware, updateUserController);
